@@ -248,6 +248,8 @@ HEADER
 
 .header__img {
   width: 60%;
+  display: flex;
+  justify-content: end;
 }
 
 .header__img--wrapper {
@@ -437,6 +439,8 @@ QUALITY
 
 .quality__img--wrapper {
   width: 50%;
+  display: flex;
+  justify-content: end;
 }
 
 .quality__img {
@@ -513,6 +517,7 @@ STEPS
   align-items: start;
   justify-content: space-between;
   width: 50%;
+  padding-left: 40px;
 }
 
 .steps__title {
@@ -557,6 +562,7 @@ STEPS
 .steps__title--wrapper,
 .steps__img--wrapper {
   height: 100%;
+
   padding: 16px;
 }
 
@@ -1303,8 +1309,7 @@ i:hover {
     opacity: 1;
     visibility: visible;
   }
-
-  .btn__menu--svg:hover {
+  row header__row .btn__menu--svg:hover {
     cursor: pointer;
     opacity: 0.86;
   }
