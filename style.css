@@ -388,7 +388,9 @@ h3 {
 }
 
 .feature__img {
-  width: 30px;
+  width: 24px;
+  height: 24px;
+  display: flex;
 }
 
 .service__para {
@@ -410,7 +412,9 @@ h3 {
 }
 
 .img__border {
-  height: 25%;
+  border: solid 2px #243e6348;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 /* 
@@ -564,6 +568,86 @@ STEPS
   height: 100%;
 
   padding: 16px;
+}
+
+/* 
+
+VALUES 
+
+*/
+
+.values__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.values__header--wrapper {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.values__img--wrapper {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.values__img {
+  width: 100%;
+}
+
+.values__list {
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+}
+
+.sectoin__tag,
+.values__para,
+.values__para,
+.values__header {
+  text-align: start;
+}
+
+.values__para,
+.values__para,
+.values__header {
+  padding-bottom: 20px;
+}
+
+.values__header {
+  font-size: 56px;
+}
+
+.value__title {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.value__para {
+  color: #8f96a0;
+  width: 200px;
+}
+
+.values__btn {
+  background-color: #6315ff;
+  border: none;
+  padding: 20px 30px;
+  color: white;
+  border-radius: 40px;
+  font-size: 16px;
+  transition: all 300ms ease;
+}
+
+.values__btn:hover {
+  opacity: 0.86;
+}
+
+.values__btn:active {
+  opacity: 1;
 }
 
 /*
@@ -889,6 +973,112 @@ PRICING
 
 /* 
 
+TESTIMONIALS
+
+*/
+
+.test__row {
+  display: flex;
+}
+
+.test__img--wrapper {
+  width: 50%;
+}
+
+.test__img {
+  padding: 20px;
+  height: 100%;
+}
+
+.test__title {
+  text-align: left;
+}
+
+.test__text--wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.test__review,
+.test__profile {
+  padding: 0 0 16px 0;
+}
+
+.review__title,
+.test__rating {
+  padding-bottom: 20px;
+}
+
+.test__para {
+  padding-bottom: 50px;
+}
+
+.test__rating i {
+  color: gold;
+}
+
+.profile__name {
+  padding-bottom: 8px;
+}
+
+.img__desc {
+  padding-left: 20px;
+}
+
+.test__profile--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.test__profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.btn__left,
+.btn__right {
+  background-color: rgba(194, 194, 194, 0.493);
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+
+.test__btns i {
+  color: #6415ff;
+}
+
+.btn__left:hover,
+.btn__right:hover {
+  opacity: 0.86;
+}
+
+.btn__left:active,
+.btn__right:active {
+  opacity: 1;
+}
+
+.btn__left {
+  margin-right: 20px;
+}
+
+.test__header {
+  font-size: 56px;
+  padding-bottom: 30px;
+}
+
+/* 
+
 CONTACT US BAR 
 
 */
@@ -1079,6 +1269,10 @@ i:hover {
     padding: 10px;
   }
 
+  .service__sub-title {
+    padding-top: 20px;
+  }
+
   .quality__header--title,
   .quality__title,
   .quality__header--wrapper p,
@@ -1155,6 +1349,11 @@ i:hover {
 
   .step {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .pricing__header {
@@ -1237,6 +1436,28 @@ i:hover {
     transition: opacity 300ms ease;
   }
 
+  .contact-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+  }
+
+  .step__description {
+    text-align: center;
+    padding: 0;
+  }
+
+  .contact-us__title {
+    width: 100%;
+  }
+
+  .contact-us__title {
+    padding-bottom: 40px;
+  }
+
   .sing-up__backdrop a {
     color: white;
     padding: 8px 10px;
@@ -1259,6 +1480,35 @@ i:hover {
   .contact__row {
     margin-bottom: 76px;
     padding: 0px 16px;
+  }
+
+  .test__row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .test__title {
+    text-align: center;
+  }
+
+  .test__img--wrapper {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .test__profile--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .test__img {
+    width: 100%;
+  }
+
+  .test__text--wrapper {
+    width: 100%;
   }
 }
 
