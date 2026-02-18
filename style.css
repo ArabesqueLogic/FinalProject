@@ -585,6 +585,7 @@ VALUES
 .values__header--wrapper {
   width: 50%;
   padding-right: 20px;
+  padding-left: 10px;
 }
 
 .values__img--wrapper {
@@ -602,6 +603,7 @@ VALUES
   justify-content: space-between;
   max-width: 500px;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .sectoin__tag,
@@ -644,6 +646,7 @@ VALUES
 
 .values__btn:hover {
   opacity: 0.86;
+  scale: 1.02;
 }
 
 .values__btn:active {
