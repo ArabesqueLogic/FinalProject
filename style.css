@@ -598,7 +598,7 @@ VALUES
 
 .values__list {
   display: flex;
-  padding-bottom: 40px;
+  flex-direction: row;
   justify-content: space-between;
   max-width: 500px;
   width: 100%;
@@ -1333,6 +1333,48 @@ i:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .values__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sectoin__tag,
+  .values__header,
+  .values__para {
+    text-align: center;
+    width: 100%;
+  }
+
+  .values__para {
+    max-width: 600px;
+  }
+
+  .values__list {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .values__header--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0 0 40px 0;
+  }
+
+  .values__img--wrapper {
+    width: 100%;
+  }
+
+  .value {
+    padding-bottom: 40px;
   }
 
   .pricing__plan--cards {
